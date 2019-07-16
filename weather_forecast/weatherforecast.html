@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> WEATHER FORECAST </title>
+    <!-- CSS links -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="weatherforecast.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Oswald|Source+Sans+Pro|Squada+One&display=swap" rel="stylesheet">
+    <script src="weatherforecast.js"></script>
+    <script src="digitalclock.js"></script>
+  </head>
+  <body onload=DisplayTime(); onload="loading(url)">
+    <!--Main Page Area-->
+    <div id="main">
+        <!--Heading = WEATHER FORECAST-->
+        <h1>WEATHER FORECAST</h1>
+        <!--Real Time Digital Clock-->
+        <div class="displayTime">
+          <p id="display"></p>
+        </div>
+        <!--Select the Location-->
+        <div class="location">
+          <p class="search">
+            <input type="text" placeholder="Enter the City" autocomplete="off" id="city">
+            <button type="Submit" name="button" onclick="loadDoc()">
+              <i class='fas fa-location-arrow' id="icon" style='font-size:30px; color:#e83c02;'></i> SEARCH
+            </button>
+          </p>
+        </div>
+        <!--Display the Weather of the Location Selected-->
+        <div id="displayWeather">
+
+        </div>
+        <div id="footer">
+          Check out Latest Weather Updates of any place.
+        </div>
+    </div>
+    <!-- JavaScript Link -->
+  </body>
+</html>
