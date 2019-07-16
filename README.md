@@ -1,2 +1,2 @@
 # weather-forecast
-Added a Weather Forecast Project
+Weather Forecast Project using HTML, CSS and Javascript and OpenWeatherMap API
